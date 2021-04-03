@@ -1,5 +1,6 @@
 import org.junit.AfterClass
 import org.junit.BeforeClass
+import org.junit.Test
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
@@ -9,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions
 
 import java.util.logging.Level
 
-class Test {
+class TestClass {
     static WebDriver driver
 
     @BeforeClass
@@ -29,7 +30,7 @@ class Test {
         }
     }
 
-    @org.junit.Test
+    @Test
     void testAll() {
         driver.get("http://www.google.com")
         WebElement element = driver.findElement(By.cssSelector('button'))
